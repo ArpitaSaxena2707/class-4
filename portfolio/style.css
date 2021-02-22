@@ -1,0 +1,43 @@
+h1{
+    color : blue; 
+    margin :30px
+}
+*{
+    border:solid
+}
+.header{
+    background-color: antiquewhite;
+    display:flex;
+    justify-content:space-between
+}
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position:relative
+}
+.grid p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0;
+    }
+    .grid:hover p{
+        opacity:1
+    }
+    .grid:hover img{
+        opacity:0.33
+    }
+body{
+    background-color:rgb(255,182,193) ;
+}
+a:link {
+    color:chartreuse
+}
+a:visited{
+    color:coral
+}
+.menu{
+    margin-right:30px;
+}

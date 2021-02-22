@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta property="fb:pages" content="114349356783954" />
+<link rel="dns-prefetch" href="https://ads.pubmatic.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://www.gstatic.com/">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CRoboto:400,400i,700&display=swap" rel="stylesheet">
+<!-- Css -->
+<link rel="stylesheet" href="/css/bootstrap.min.css" rel="preload" as="style"/>
+<link rel="stylesheet" href="/css/font-icons.css?v=3" rel="preload" as="style"/>
+<link rel="stylesheet" href="/css/techcss-unminify.css?v=10.02.20.21" type="text/css" rel="preload" as="style"/>
+<link rel="stylesheet" href="/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/font-icons.css?v=3" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/techcss-unminify.css?v=10.02.20.21" type="text/css" rel="stylesheet"/>
+<!-- Favicons -->
+<link rel="shortcut icon" href="/img/favicon-v1.png">
+<!-- Lazyload -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/lazysizes.min.js" async></script>
+<script>
+var isMobile=false;
+var isTablet=false;
+var isDesktop=false;
+var isLargeDesktop=false;
+var WFClientTypeDef = {"large":"(min-width: 1024px)","small":"(max-width: 767px)","medium":"(min-width: 768px) and (max-width: 1023px)"};
+for ( var type in WFClientTypeDef) {
+if (window.matchMedia(WFClientTypeDef[type]).matches)
+{
+switch (type) {
+case "large": isDesktop=true; break;
+case "medium": isTablet=true; break;
+case "small": isMobile=true; break;
+}
+break; }}
+function isDeviceEnabled(skipOnDeviceValue) {
+if(skipOnDeviceValue=="large" && isDesktop)
+{return true;}
+if(skipOnDeviceValue=="medium" && isTablet)
+{return true;}
+if(skipOnDeviceValue=="small" && isMobile)
+{return true;}
+return false; }
+</script>
+<script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
+<!-- OpwenWrap Script begins here -->
+<script type="text/javascript">
+var PWT = {};
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+var pageType = "story";
+(function() {
+var purl = window.location.href;
+var url = '//ads.pubmatic.com/AdServer/js/pwt/156370/2494';
+var profileVersionId = '';
+if (purl.indexOf('pwtv=') > 0) {
+var regexp = /pwtv=(.*?)(&|$)/g;
+var matches = regexp.exec(purl);
+if (matches.length >= 2 && matches[1].length > 0) {
+profileVersionId = '/' + matches[1];
+}
+}
+var wtads = document.createElement('script');
+wtads.async = true;
+wtads.type = 'text/javascript';
+wtads.src = url + profileVersionId + '/pwt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(wtads, node);
+})();
+</script>
+<!--Wrapper Script ends here -->
+<script type="text/javascript">
+// this function will act as a lock and will call the GPT API
+function initAdserver(forced) {
+if((forced === true && window.initAdserverFlag !== true) || (PWT.a9_BidsReceived && PWT.ow_BidsReceived)){
+window.initAdserverFlag = true;
+PWT.a9_BidsReceived = PWT.ow_BidsReceived = false;
+googletag.pubads().refresh();
+}
+}
+</script>
+<!-- A9 Script Start -->
+<script>
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+var apsSlots = [];
+if(isDeviceEnabled('large')) {
+apsSlots = [{
+slotID: 'div-gpt-ad-1582279226287-0',
+sizes: [[970, 66], [728, 90], [970, 90], [980, 90], [950, 90], [960, 90], [750, 100], [980, 120], [930, 180], [750, 200], [970, 250], [1290, 250], [580, 400]]
+}];
+}
+if(isDeviceEnabled('small')) {
+apsSlots = [{
+slotID: 'div-gpt-ad-1582279226287-0',
+sizes: [[320, 50], [320, 100],[300, 250]]
+}];
+}
+apstag.init({
+pubID: '04490307-82e6-4a26-8a03-ce88452d8ffd',
+adServer: 'googletag'
+});
+apstag.fetchBids({
+slots: apsSlots,
+timeout: 2e3 // Make Sure this timeout is less than or equal to OpenWrap TimeOut
+}, function(bids) {
+googletag.cmd.push(function(){
+apstag.setDisplayBids();
+PWT.a9_BidsReceived = true;
+initAdserver(false);
+});
+});
+</script>
+<!-- A9 Script End -->
+<script type="text/javascript">
+function comscoreContextual() {
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://segment-data.zqtk.net/htmedia-cna806f?url=' + encodeURIComponent("https://tech.hindustantimes.com" + window.location.pathname), true);
+xhr.timeout = 1000; // time in milliseconds
+xhr.onload = function () {
+dfpWrapper(JSON.parse(this.responseText));
+};
+xhr.ontimeout = function (e) {
+dfpWrapper();
+};
+xhr.onerror = function () {
+dfpWrapper();
+};
+xhr.send(null);
+}
+comscoreContextual();
+function dfpWrapper(jsonData = '') {
+var vnd_prx_segments = '';
+if (jsonData !== '' && jsonData.targeting !== undefined) {
+vnd_prx_segments = jsonData.targeting.vnd_prx_segments;
+}
+googletag.cmd.push(function() {
+if(isDeviceEnabled('large')) {
+if (pageType == "home"){
+googletag.defineSlot('/1055314/HT_TECH_Desk_Home_Header_Multisize', [[970, 66], [728, 90], [970, 90], [980, 90], [950, 90], [960, 90], [750, 100], [980, 120], [930, 180], [750, 200], [970, 250], [1290, 250], [580, 400]], 'div-gpt-ad-1582279226287-0').addService(googletag.pubads());
+}else if(pageType == "section"){
+googletag.defineSlot('/1055314/HT_TECH_Desk_Section_Header_Multisize', [[970, 66], [728, 90], [970, 90], [980, 90], [950, 90], [960, 90], [750, 100], [980, 120], [930, 180], [750, 200], [970, 250], [1290, 250], [580, 400]], 'div-gpt-ad-1582279226287-0').addService(googletag.pubads());
+}else if(pageType == "story"){
+googletag.defineSlot('/1055314/HT_TECH_Desk_Story_Header_Multisize', [[970, 66], [728, 90], [970, 90], [980, 90], [950, 90], [960, 90], [750, 100], [980, 120], [930, 180], [750, 200], [970, 250], [1290, 250], [580, 400]], 'div-gpt-ad-1582279226287-0').addService(googletag.pubads());
+}
+}
+if(isDeviceEnabled('small')) {
+if (pageType == "home"){
+googletag.defineSlot('/1055314/HT_TECH_WAP_Home_Masthead_Multisize', [320, 100], 'div-gpt-ad-1582279226287-0').addService(googletag.pubads());
+}else if(pageType == "section"){
+googletag.defineSlot('/1055314/HT_TECH_WAP_Section_Masthead_Multisize', [320, 100], 'div-gpt-ad-1582279226287-0').addService(googletag.pubads());
+}else if(pageType == "story"){
+googletag.defineSlot('/1055314/HT_TECH_WAP_Story_Masthead_Multisize', [320, 100], 'div-gpt-ad-1582279226287-0').addService(googletag.pubads());
+}
+}
+// common targetings
+googletag.pubads().setTargeting("section", "tech");
+googletag.pubads().setTargeting("subsection", "news");
+googletag.pubads().setTargeting("tags", "google,google chrome,google chrome dino,google chrome t-rex,google chrome 10 years,google 20 years,google chrome dino game,google chrome dinosaur game");
+googletag.pubads().setTargeting("storyid", "71589384424708");
+googletag.pubads().setTargeting("vnd_prx_segments", vnd_prx_segments);
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs();
+googletag.pubads().disableInitialLoad();
+googletag.enableServices();
+// OpenWrap code START here
+if(typeof PWT.requestBids === 'function'){
+PWT.requestBids(
+PWT.generateConfForGPT(googletag.pubads().getSlots()),
+function(adUnitsArray) {
+PWT.addKeyValuePairsToGPTSlots(adUnitsArray);
+PWT.ow_BidsReceived = true;
+initAdserver(false);
+}
+);
+}
+// No need to handle "else" part as we have A9 wrapper on page
+// OpenWrap code END here
+var FAILSAFE_TIMEOUT = 3000; // this timeout should be more than OpenWrap and A9 timeout
+setTimeout(function() {
+initAdserver(true); // calling this function with forced mode set to true so that GPT API is always executed
+}, FAILSAFE_TIMEOUT);
+});
+}
+</script><script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","url": "https://tech.hindustantimes.com","name": "Hindustan Times Tech","logo": {"@type": "ImageObject","url": "https://tech.hindustantimes.com/img/tech-logo-new-v1.png","width":600,"height":60 }}</script>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"item":
+{
+"@id": "https://tech.hindustantimes.com",
+"name": "Home"
+}
+},
+{
+"@type": "ListItem",
+"position": 2,
+"item":
+{
+"@id": "https://tech.hindustantimes.com/tech",
+"name": "Tech"
+}
+},
+{
+"@type": "ListItem",
+"position": 3,
+"item":
+{
+"@id": "https://tech.hindustantimes.com/tech/news",
+"name": "News"
+}
+},
+{
+"@type": "ListItem",
+"position": 4,
+"item":
+{
+"name": "Google Chrome dino game: T-Rex gets party hats, cakes and more"
+}
+}
+]
+}
+</script>
+<script>
+function basicSearch(e, inputId) {
+var searchText = document.getElementById(inputId).value;
+var regex = /^[a-zA-Z0-9-,.@&;:’'"$%+ ]+$/;
+if (regex.test(document.getElementById(inputId).value) == false || document.getElementById(inputId).value.trim() == "") {
+var inputVal = document.getElementById(inputId).value;
+document.getElementById(inputId).value = inputVal.substr(0, inputVal.length - 1)
+}
+if (e != "1") {
+if (e.keyCode == 13) {
+var tb = document.getElementById(inputId);
+if (tb.value == "" || tb.value == null) {
+alert("Please enter the keyword");
+tb.focus();
+return false
+} else {
+console.log(encodeURIComponent(tb.value));
+top.location.href = "/search?text=" + encodeURIComponent(tb.value.replace("%", ""));
+return false
+}
+}
+} else {
+var tb = document.getElementById(inputId);
+if (tb.value == "" || tb.value == null || tb.value == "Search") {
+alert("Please enter the keyword");
+tb.focus();
+return false
+} else {
+console.log(encodeURIComponent(tb.value));
+location.href = "/search?text=" + encodeURIComponent(tb.value.replace("%", ""))
+}
+}
+}
+</script>
+<meta name="keywords" content="google,google chrome,google chrome dino,google chrome t-rex,google chrome 10 years,google 20 years,google chrome dino game,google chrome dinosaur game" />
+<meta name="news_keywords" content="google,google chrome,google chrome dino,google chrome t-rex,google chrome 10 years,google 20 years,google chrome dino game,google chrome dinosaur game" />
+<link rel="amphtml" href="https://tech.hindustantimes.com/amp/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html">
+<title>Google Chrome dino game: T-Rex gets party hats, cakes and more</title>
+<meta name="robots" content="NOYDIR,NOODP">
+<meta name="description" content="Google Chrome&rsquo;s T-Rex dino can run for 17 million years. Google explains more facts, history and surprises behind its popular offline dino game." />
+<link rel="canonical" href="https://tech.hindustantimes.com/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html" />
+<meta property="og:admin" content="Hindustan Times Tech" />
+<meta property="og:name" content="Hindustan Times Tech" />
+<meta property="og:title" content="Google Chrome dino game: T-Rex gets party hats, cakes and more" />
+<meta property="og:url" content="https://tech.hindustantimes.com/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html" />
+<meta property="og:description" content="Google Chrome&rsquo;s T-Rex dino can run for 17 million years. Google explains more facts, history and surprises behind its popular offline dino game." />
+<meta property="og:image" content="https://images.hindustantimes.com/tech/rf/image_size_630x354/HT/p2/2018/09/08/Pictures/_7ae928c8-b34e-11e8-bb15-a1f88311a832.jpg" />
+<meta property="og:site_name" content="Hindustan Times Tech" />
+<meta property="fb:admins" content="id" />
+<meta property="fb:app_id" content="451531249170555">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Google Chrome dino game: T-Rex gets party hats, cakes and more">
+<meta name="twitter:description" content="Google Chrome&rsquo;s T-Rex dino can run for 17 million years. Google explains more facts, history and surprises behind its popular offline dino game.">
+<meta name="twitter:url" content="https://tech.hindustantimes.com/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html"/>
+<meta name="twitter:site" content="@HTTech">
+<meta name="twitter:image:src" content="https://images.hindustantimes.com/tech/rf/image_size_630x354/HT/p2/2018/09/08/Pictures/_7ae928c8-b34e-11e8-bb15-a1f88311a832.jpg">
+<meta name="twitter:domain" content="Hindustan Times Tech"/>
+<meta property="article:published_time" content="2018-09-08T15:36:12+05:30"/>
+<meta property="article:modified_time" content= "2018-09-08T15:41:06+05:30"/>
+<meta name='last-updated' content='2018-09-08T15:41:06+05:30' />
+<script type="application/ld+json">{ "@context" : "https://schema.org",
+"@type": "WebPage","name": "Google Chrome dino game: T-Rex gets party hats, cakes and more","description": "Google Chrome&rsquo;s T-Rex dino can run for 17 million years. Google explains more facts, history and surprises behind its popular offline dino game." , "url":"https://tech.hindustantimes.com/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html" }</script>
+<meta name="Last-Modified" content="2018-09-08T15:41:06+05:30" />
+<meta name="Last-Modified-Date" content="Sat, Sep 08, 2018" />
+<meta name="Last-Modified-Time" content="2018-09-08T15:41:06+05:30" />
+<meta http-equiv="Last-Modified" content="2018-09-08T15:41:06+05:30" />
+<script type="text/javascript">
+if(window.location.hostname.toString() == "stg-tech.hindustantimes.com" || window.location.hostname.toString() == "localhost" || window.location.hostname.toString() == "preprod-tech.hindustantimes.com" ) {
+(function(p, l, o, w, i, n, g) {
+if (!p[i]) {p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];p.GlobalSnowplowNamespace.push(i);p[i] = function() {
+(p[i].q = p[i].q || []).push(arguments);};p[i].q = p[i].q || [];n = l.createElement(o);g = l.getElementsByTagName(o)[0];n.async = 1;n.src = w;g.parentNode.insertBefore(n, g);p['product_id'] = "tc";p['platoform'] = "web";
+}}(window, document, "script","https://analytics.dev.htmedia.in/app/htil-analytics.js","snowplow"));
+}
+else {
+(function(p, l, o, w, i, n, g) {
+if (!p[i]) {p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];p.GlobalSnowplowNamespace.push(i);p[i] = function() {
+(p[i].q = p[i].q || []).push(arguments);};p[i].q = p[i].q || [];n = l.createElement(o);g = l.getElementsByTagName(o)[0];n.async = 1;n.src = w;g.parentNode.insertBefore(n, g);p['product_id'] = "tc";p['platoform'] = "web";
+}}(window, document, "script","https://analytics.htmedia.in/analytics-js/htil-analytics.js","snowplow"));
+}
+</script>
+<script type='text/javascript'>
+(function () {var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+_sf_async_config.uid = 63228;
+_sf_async_config.domain = 'tech.hindustantimes.com';
+_sf_async_config.useCanonical = true;
+_sf_async_config.useCanonicalDomain = true;
+_sf_async_config.sections = 'tech';
+_sf_async_config.authors = 'Marcia Sekhose';
+function loadChartbeat()
+{ var e = document.createElement('script'); var n = document.getElementsByTagName('script')[0];
+e.type = 'text/javascript'; e.async = true; e.src = '//static.chartbeat.com/js/chartbeat.js'; n.parentNode.insertBefore(e, n); }
+loadChartbeat();
+})();
+</script>
+<script>
+var _comscore = _comscore || [];
+_comscore.push({
+c1 : "2",
+c2 : "6035286"
+});
+(function() {
+var s = document.createElement("script"), el = document
+.getElementsByTagName("script")[0];
+s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb"
+: "http://b")
++ ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-1431719-77', 'auto', {'useAmpClientId': true});
+ga ('set', 'dimension2',"Marcia Sekhose");
+ga ('set', 'dimension4', "Hindustan Times");
+ga ('set', 'dimension6', "google,google chrome,google chrome dino,google chrome t-rex,google chrome 10 years,google 20 years,google chrome dino game,google chrome dinosaur game");
+ga ('set', 'dimension3', "tech");
+ga('send', 'pageview');
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];dataLayer.push({ 'category': 'tech', 'subcategory': 'news' });
+</script>
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFD6PTW');
+</script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"https://tech.hindustantimes.com",
+"potentialAction":{
+"@type":"SearchAction",
+"target":"https://tech.hindustantimes.com/search?text={search_term_string}",
+"query-input":"required name=search_term_string"
+}
+}
+</script>
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"SiteNavigationElement",
+"name":[
+"mobile"
+,
+"Mobile News",
+"mobile reviews",
+"Laptops PC"
+,
+"Laptops/PC news",
+"Laptops/PC reviews",
+"wearables"
+,
+"wearables news",
+"wearables reviews",
+"gaming"
+,
+"photos"
+,
+"videos"
+,
+"how to"
+,
+"TV"
+,
+"TV News",
+"TV Reviews",
+"home appliances"
+],
+"url":[
+"https://tech.hindustantimes.com/mobile"
+,
+"https://tech.hindustantimes.com/mobile/news",
+"https://tech.hindustantimes.com/mobile/reviews",
+"https://tech.hindustantimes.com/laptops-pc"
+,
+"https://tech.hindustantimes.com/laptops-pc/news",
+"https://tech.hindustantimes.com/laptops-pc/reviews",
+"https://tech.hindustantimes.com/wearables"
+,
+"https://tech.hindustantimes.com/wearables/news",
+"https://tech.hindustantimes.com/wearables/reviews",
+"https://tech.hindustantimes.com/gaming"
+,
+"https://tech.hindustantimes.com/photos"
+,
+"https://tech.hindustantimes.com/videos"
+,
+"https://tech.hindustantimes.com/how-to"
+,
+"https://tech.hindustantimes.com/tv"
+,
+"https://tech.hindustantimes.com/tv/news",
+"https://tech.hindustantimes.com/tv/reviews",
+"https://tech.hindustantimes.com/home-appliances"
+]
+}
+</script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://tech.hindustantimes.com/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html"
+},
+"isPartOf":{
+"@type":"CreativeWork",
+"name":"Hindustan Times Tech",
+"url":"https://tech.hindustantimes.com/"
+},
+"inLanguage":"en",
+"headline": "Google Chrome dino game: T-Rex gets party hats, cakes and more",
+"description":"Google Chrome&rsquo;s T-Rex dino can run for 17 million years. Google explains more facts, history and surprises behind its popular offline dino game.",
+"keywords":"google,google chrome,google chrome dino,google chrome t-rex,google chrome 10 years,google 20 years,google chrome dino game,google chrome dinosaur game",
+"articleSection":"tech",
+"url":"https://tech.hindustantimes.com/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html",
+"image":["https://images.hindustantimes.com/tech/rf/image_size_630x354/HT/p2/2018/09/08/Pictures/_7ae928c8-b34e-11e8-bb15-a1f88311a832.jpg"],
+"datePublished": "2018-09-08T15:36:12+05:30",
+"dateModified":"2018-09-08T15:41:06+05:30",
+"articleBody":"
+Google is celebrating its 20th anniversary on the internet this month by taking a look at its products created in the last two decades. Google Chrome also turned 10 this year and the search giant has a sweet little surprise for its users.
+Google has kept us entertained even offline through its T-Rex game. If you open Google Chrome when there's no internet connection the dino game will appear on the screen. Users simply need to tap the spacebar and start playing the continuous game. On mobile, tapping anywhere on the screen starts the game.
+Anniversary edition of Chrome dinoAs part of Chrome's 10th anniversary, Google gives a party hat to its T-Rex dino along with birthday cakes and balloons. The T-Rex wears a blue hat during the day and a red one during the night. This anniversary edition of the game will be available throughout September.
+Creators of Chrome dinoGoogle in a blog post, shared how this offline game came into creation and revealed that its Design team members Edward Jung, Sebastien Gabriel and Alan Bettes created the Chrome dino game four years back.
+Idea behind the Chrome dino gameAs the visuals in the game suggest, its creators wanted to create an environment of pre-historic times when there was no internet. The visual background is set on a desert with cacti, birds and rocks where the T-Rex has to duck and jump while running. The creators even thought of including a roaring dino but then scrapped the idea, the post said.
+Chrome Dino's popularity globallyThe offline game is played around 270 million times globally every month on desktops and mobiles. The most number of players come from countries where internet connectivity is poor. These include India, Brazil, Mexico and Indonesia.
+Interesting factThis game probably has the longest run time of 17 million years. Yes, the game is built to last for 17 million years which is also the duration of T-Rex on earth. Finishing the game doesn't seem a possibility, obviously.
+Arcade mode for Chrome dinoFor those who want to play the game without having to turn your internet off, go to chrome://dino. There's also an arcade mode for this game.
+&nbsp;
+",
+"author": [
+{"sameAs":"https://tech.hindustantimes.com/author/Marcia Sekhose", "name":"Marcia Sekhose" }
+],
+"publisher": {
+"@type": "Organization",
+"name": "Hindustan Times Tech",
+"url":"https://tech.hindustantimes.com/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://tech.hindustantimes.com/img/tech-logo-new-v1.png", "width": 600, "height": 60
+}
+},
+"associatedMedia":{
+"@type":"imageObject",
+"url":"https://images.hindustantimes.com/tech/rf/image_size_630x354/HT/p2/2018/09/08/Pictures/_7ae928c8-b34e-11e8-bb15-a1f88311a832.jpg",
+"caption":"",
+"description":"Google Chrome&rsquo;s T-Rex dino can run for 17 million years. Google explains more facts, history and surprises behind its popular offline dino game.",
+"height":"900",
+"width":"1200"
+}
+}
+</script>
+<script src="/js/infinite-scroll.pkgd.min.js"></script>
+</head>
+<body class="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFD6PTW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Preloader -->
+<div class="loader-mask">
+<div class="loader">
+<div></div>
+</div>
+</div>
+<!-- Bg Overlay -->
+<div class="content-overlay"></div>
+<!-- Subscribe Modal -->
+<!-- end subscribe modal -->
+<!-- Mobile Sidenav -->
+<header class="sidenav" id="sidenav">
+<!-- Search -->
+<div class="sidenav__search-mobile">
+<div class="sidenav__search-mobile-form">
+<input name="text" type="text" id="search" class="sidenav__search-mobile-input"
+onkeyup="return basicSearch(event,'search')"
+placeholder="Search..." aria-label="Search input">
+<button type="submit" class="sidenav__search-mobile-submit" onClick="return basicSearch('1','search');"
+aria-label="Submit search">
+<i class="ui-search"></i>
+</button>
+</div>
+</div>
+<nav>
+<ul class="sidenav__menu" role="menubar">
+<li><a class="sidenav__menu-link" href="/tech/news">News</a></li>
+<li>
+<a href="/mobile" class="sidenav__menu-link">mobile</a>
+<button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+<ul class="sidenav__menu-dropdown">
+<li><a href="/mobile/news" class="sidenav__menu-link">Mobile News</a></li>
+<li><a href="/mobile/reviews" class="sidenav__menu-link">mobile reviews</a></li>
+</ul>
+</li>
+<li>
+<a href="/laptops-pc" class="sidenav__menu-link">Laptops PC</a>
+<button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+<ul class="sidenav__menu-dropdown">
+<li><a href="/laptops-pc/news" class="sidenav__menu-link">Laptops/PC news</a></li>
+<li><a href="/laptops-pc/reviews" class="sidenav__menu-link">Laptops/PC reviews</a></li>
+</ul>
+</li>
+<li>
+<a href="/wearables" class="sidenav__menu-link">wearables</a>
+<button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+<ul class="sidenav__menu-dropdown">
+<li><a href="/wearables/news" class="sidenav__menu-link">wearables news</a></li>
+<li><a href="/wearables/reviews" class="sidenav__menu-link">wearables reviews</a></li>
+</ul>
+</li>
+<li>
+<a href="/gaming" class="sidenav__menu-link">gaming</a>
+</li>
+<li>
+<a href="/photos" class="sidenav__menu-link">photos</a>
+</li>
+<li>
+<a href="/videos" class="sidenav__menu-link">videos</a>
+</li>
+<li>
+<a href="/how-to" class="sidenav__menu-link">how to</a>
+</li>
+<li>
+<a href="/tv" class="sidenav__menu-link">TV</a>
+<button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+<ul class="sidenav__menu-dropdown">
+<li><a href="/tv/news" class="sidenav__menu-link">TV News</a></li>
+<li><a href="/tv/reviews" class="sidenav__menu-link">TV Reviews</a></li>
+</ul>
+</li>
+<li>
+<a href="/home-appliances" class="sidenav__menu-link">home appliances</a>
+</li>
+</ul>
+</nav>
+<div class="socials sidenav__socials ">
+<a class="social-facebook" href="https://www.facebook.com/hindustantimestech" target="_blank" aria-label="facebook">
+<i class="ui-facebook"></i>
+</a>
+<a class="social-twitter" href="https://twitter.com/HTTech" target="_blank" aria-label="twitter">
+<i class="ui-twitter"></i>
+</a>
+</div>
+</header> <!-- end mobile sidenav -->
+<!-- Navigation -->
+<header class="nav">
+<!-- /1055314/HT_TECH_Desk_Home_Header_Multisize -->
+<div class="nav__holder nav--sticky">
+<div class="container relative">
+<div class="flex-parent">
+<!-- Mobile Menu Button -->
+<button class="nav-icon-toggle" id="nav-icon-toggle" aria-label="Open mobile menu">
+<span class="nav-icon-toggle__box" onclick="document.getElementById('search').value = ''">
+<span class="nav-icon-toggle__inner" ></span>
+</span>
+</button>
+<!-- end mobile menu button -->
+<!-- Logo -->
+<a href="/" class="logo">
+<img class="logo__img" src="/img/httech_logo_v1.svg" alt="HT Tech">
+</a>
+<!-- Nav-wrap -->
+<nav class="flex-child nav__wrap d-none d-lg-block">
+<ul class="nav__menu">
+<li><a href="/tech/news">News</a></li>
+<li class="nav__dropdown active">
+<a href="/mobile">mobile</a>
+<ul class="nav__dropdown-menu">
+<li>
+<a href="/mobile/news">Mobile News</a>
+</li>
+<li>
+<a href="/mobile/reviews">mobile reviews</a>
+</li>
+</ul>
+</li>
+<li class="nav__dropdown active">
+<a href="/laptops-pc">Laptops PC</a>
+<ul class="nav__dropdown-menu">
+<li>
+<a href="/laptops-pc/news">Laptops/PC news</a>
+</li>
+<li>
+<a href="/laptops-pc/reviews">Laptops/PC reviews</a>
+</li>
+</ul>
+</li>
+<li class="nav__dropdown active">
+<a href="/wearables">wearables</a>
+<ul class="nav__dropdown-menu">
+<li>
+<a href="/wearables/news">wearables news</a>
+</li>
+<li>
+<a href="/wearables/reviews">wearables reviews</a>
+</li>
+</ul>
+</li>
+<li class="nav__dropdown active">
+<a href="/gaming">gaming</a>
+</li>
+<li class="nav__dropdown active">
+<a href="/photos">photos</a>
+</li>
+<li class="nav__dropdown active">
+<a href="/videos">videos</a>
+</li>
+<li class="nav__dropdown active">
+<a href="/how-to">how to</a>
+</li>
+<li class="nav__dropdown active">
+<a href="/tv">TV</a>
+<ul class="nav__dropdown-menu">
+<li>
+<a href="/tv/news">TV News</a>
+</li>
+<li>
+<a href="/tv/reviews">TV Reviews</a>
+</li>
+</ul>
+</li>
+<li class="nav__dropdown active">
+<a href="/home-appliances">home appliances</a>
+</li>
+</ul>
+<!-- end menu -->
+</nav>
+<!-- end nav-wrap -->
+<!-- Nav Right -->
+<div class="nav__right nav--align-right d-none d-lg-flex">
+<!-- Socials -->
+<div class="nav__right-item socials socials--nobase nav__socials ">
+<ul class="social">
+<li>
+<amp-social-share class="rounded" type="facebook" data-param-app_id="451531249170555" width="35" height="35"></amp-social-share>
+</li>
+<li>
+<amp-social-share class="rounded" type="twitter" width="35" height="35"></amp-social-share>
+</li>
+<li>
+<amp-social-share class="rounded" type="whatsapp" width="35" height="35"></amp-social-share>
+</li>
+</ul>
+</div>
+<div class="nav__right-item nav__search">
+<a class="nav__search-trigger" id="nav__search-trigger" href="javascript:void(0)">
+<i class="ui-search nav__search-trigger-icon" onclick="document.getElementById('searchParameter').value = ''"></i>
+</a>
+<div class="nav__search-box" id="nav__search-box">
+<div class="nav__search-form">
+<input type="text" id="searchParameter" placeholder="Search an article" onkeyup="return basicSearch(event,'searchParameter')" class="nav__search-input">
+<button type="submit" class="nav__search-button btn btn-md btn-color btn-button"
+onClick="return basicSearch('1','searchParameter');">
+<i class="ui-search nav__search-icon"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- end nav right -->
+</div>
+<!-- end flex-parent -->
+</div>
+<!-- end container -->
+</div>
+</div>
+</header>
+<div class="header-ad" id='div-gpt-ad-1582279226287-0' style="text-align: center;margin:5px auto;">
+<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1582279226287-0'); });</script>
+</div> <!-- end navigation -->
+<main class="main-container" id="main-container">
+<!-- Content -->
+<div class="content container storyDetail articles" id="allArticles">
+<script>var storyType="story";</script>
+<div id="article_0RwQekBKDU2DA0i6uZfoLK" class="article fl">
+<div id="0RwQekBKDU2DA0i6uZfoLK"></div>
+<div class="row main-area">
+<input type="hidden" value="0RwQekBKDU2DA0i6uZfoLK" class="get-uuid">
+<!-- Blog Content -->
+<div class="col-md-8 blog__content">
+<!-- standard post -->
+<div class="plr15">
+<div class="brdcrumb">
+<a href="/">Home</a> /
+<a href="/tech">Tech</a> /
+<a href="/tech/news">News</a> /
+<span>Google Chrome dino game: T-Rex gets party hats, cakes and more</a>
+</div>
+<span class="entry-section__name">tech</span>
+</div>
+<div class="storyArea" id="0RwQekBKDU2DA0i6uZfoLK_story">
+<article class="entry">
+<div class="single-post__entry-header entry__header plr15">
+<h1 class="single-post__entry-title">
+Google Chrome dino game: T-Rex gets party hats, cakes and more
+</h1>
+<h2 class="single-post__entry-title summary">
+Google Chrome&rsquo;s T-Rex dino can run for 17 million years. Google explains more facts, history and surprises behind its popular offline dino game.
+</h2>
+<h2></h2>
+<ul class="single-post__entry-meta entry__meta">
+<li>
+<div class="entry-author">
+<!--<img src="/img/blog/author.png" class="entry-author__img" alt="">-->
+<span>Author</span>
+<span class="entry-author__name">
+<div class="authorSepBlock"><a href="/author/marcia-sekhose" class="entry-author__url">Marcia Sekhose</a></div>
+</span>
+</div>
+</li>
+<li class="entry__meta-date">
+08 Sep 2018, 03:41 PM IST
+</li>
+<li>
+<span>in </span>
+<a href="/tech/news"
+class="entry__meta-category">
+news
+</a>
+</li>
+</ul>
+</div>
+<div class="entry__img-holder plr15">
+<figure>
+<img data-src="https://images.hindustantimes.com/tech/rf/image_size_960x540/HT/p2/2018/09/08/Pictures/_7ae928c8-b34e-11e8-bb15-a1f88311a832.jpg" src="/img/zero.gif" alt="Google Chrome’s T-Rex gets party hats as part of the website’s 10th anniversary celebrations." class="entry__img lazyload">
+<figcaption>Google Chrome’s T-Rex gets party hats as part of the website’s 10th anniversary celebrations. (Google)</figcaption>
+</figure>
+</div>
+<div id="article-71589384424708" class="entry__article-holder article-container">
+<!-- Share -->
+<div class="entry__share mlr15">
+<div class="entry__share-inner">
+<div class="socials">
+<a aria-label="" rel="nofollow noreferrer" class="fb social-facebook entry__share-social" href="javascript:void(0)" onClick="shareFB();" title="Share on Facebook"><i class="ui-facebook"></i></a>
+<a aria-label="Share on Twitter" rel="nofollow noreferrer" class="tw social-twitter entry__share-social" href="javascript:void(0)" title="Share on Tweeter" onclick="shareTwitter();"><i class="ui-twitter"></i></a>
+<a aria-label="whatsapp" class="wp social-whatsapp entry__share-social" href="https://api.whatsapp.com/send?text=Google Chrome dino game: T-Rex gets party hats, cakes and more - https://tech.hindustantimes.com/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html" target="_blank"><i class="ui-whatsapp"></i></a>
+</div>
+</div>
+</div>
+<!-- share -->
+<div class="entry__article htStoryDetail" id="entryArticle">
+<!-- elements start -->
+<p>Google is celebrating its 20th anniversary on the internet this month by taking a look at its products created in the last two decades. <a href="https://www.hindustantimes.com/tech/google-chrome-top-features-coming-with-10th-anniversary-update/story-2OYfz6bpmwP4Clu8y5XmJP.html">Google Chrome also turned 10 </a>this year and the search giant has a sweet little surprise for its users.</p>
+<p>Google has kept us entertained even offline through its T-Rex game. If you open Google Chrome when there's no internet connection the dino game will appear on the screen. Users simply need to tap the spacebar and start playing the continuous game. On mobile, tapping anywhere on the screen starts the game.</p>
+<p><b>Anniversary edition of Chrome dino</b><br>As part of Chrome's 10th anniversary, Google gives a party hat to its T-Rex dino along with birthday cakes and balloons. The T-Rex wears a blue hat during the day and a red one during the night. This anniversary edition of the game will be available throughout September.</p>
+<p><b>Creators of Chrome dino</b><br>Google in a<a href="https://www.blog.google/products/chrome/chrome-dino/" rel="nofollow"> blog post</a>, shared how this offline game came into creation and revealed that its Design team members Edward Jung, Sebastien Gabriel and Alan Bettes created the Chrome dino game four years back.</p>
+<p><b>Idea behind the Chrome dino game</b><br>As the visuals in the game suggest, its creators wanted to create an environment of pre-historic times when there was no internet. The visual background is set on a desert with cacti, birds and rocks where the T-Rex has to duck and jump while running. The creators even thought of including a roaring dino but then scrapped the idea, the post said.</p>
+<p><b>Chrome Dino's popularity globally</b><br>The offline game is played around 270 million times globally every month on desktops and mobiles. The most number of players come from countries where internet connectivity is poor. These include India, Brazil, Mexico and Indonesia.</p>
+<p><b>Interesting fact</b><br>This game probably has the longest run time of 17 million years. Yes, the game is built to last for 17 million years which is also the duration of T-Rex on earth. Finishing the game doesn't seem a possibility, obviously.</p>
+<p><b>Arcade mode for Chrome dino</b><br>For those who want to play the game without having to turn your internet off, go to chrome://dino. There's also an arcade mode for this game.</p>
+<p>&nbsp;</p>
+<div class="respVideo mt-30 marB20"><iframe frameborder="0" width="800" height="450" src="//www.dailymotion.com/embed/video/x6syz0s" allowfullscreen allow="autoplay"></iframe></div>
+</div>
+<!-- end entry article -->
+<div id="btn-container-71589384424708" class="more-container">
+<button id="btn-71589384424708" class="btn btn-primary btn-more" data-article="article-71589384424708" name="view-more">Read more</button>
+</div>
+</div>
+<div class="last-element plr15">
+<p> Follow HT Tech for the latest<a href="https://tech.hindustantimes.com/tech/news" > tech news</a> and <a href="https://tech.hindustantimes.com/mobile/reviews" >reviews</a>, also keep up with us on <a href="https://twitter.com/HTTech/" target="_blank">Twitter</a>, <a href="https://www.facebook.com/hindustantimestech/" target="_blank">Facebook</a>, and <a href="https://www.instagram.com/hindustantimestech/" target="_blank">Instagram</a>. For our latest videos, subscribe to our <a href="https://www.youtube.com/channel/UCUmhg3QldZiYoO9mKGpumBA/" target="_blank" >YouTube channel</a>.</p>
+</div>
+<div class="entry__tags plr15">
+Tags:
+<a href="/tags/google" rel="tag" onclick="sendTopicGA('/tags/google', 'Google');">Google</a>
+<a href="/tags/google-chrome" rel="tag" onclick="sendTopicGA('/tags/google-chrome', 'Google Chrome');">Google Chrome</a>
+</div>
+<!-- Newsletter -->
+<!-- Related Posts -->
+<!-- end related posts -->
+</article>
+</div>
+<!-- end standard post -->
+</div>
+<!-- end blog content -->
+<!-- Sidebar -->
+<aside class="col-md-4 sidebar sidebar--right mlr15">
+<div class="adsMCenter mobileNone ht-dfp-ad-large" data-adcode="/1055314/HT_TECH_Desk_ES_Story_Top_300x250_Multisize" data-adsize="[300, 250]">
+</div>
+<!-- Widget Popular Posts -->
+<div class="widget widget-popular-posts">
+<h4 class="widget-title"><a href="/latest-news">Latest News</a></h4>
+<ul class="widget-popular-posts__list">
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/mobile/news/samsung-pulls-one-ui-3-1-update-for-galaxy-s20-fe-71613205184912.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/image_-_2021-02-13T140705.097_1613205434427_1613205440101.jpg" src="/img/zero.gif" alt="Samsung Galaxy S20 FE" class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/mobile/news/samsung-pulls-one-ui-3-1-update-for-galaxy-s20-fe-71613205184912.html">Samsung pulls One UI 3.1 update for Galaxy S20 FE</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/mobile/news/blackberry-5g-smartphone-with-qwerty-keyboard-to-launch-this-year-71613200321457.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/image_-_2021-02-13T124514.918_1613200520009_1613200525728.jpg" src="/img/zero.gif" alt="BlackBerry to make a comeback again." class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/mobile/news/blackberry-5g-smartphone-with-qwerty-keyboard-to-launch-this-year-71613200321457.html">BlackBerry 5G smartphone with qwerty keyboard to launch this year</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/tech/news/vlc-4-0-with-new-ui-coming-later-this-year-71613193870565.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/vlc-2.0-poney_1613194173357_1613194186078.jpg" src="/img/zero.gif" alt="VLC player" class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/tech/news/vlc-4-0-with-new-ui-coming-later-this-year-71613193870565.html">VLC 4.0 with new UI coming later this year</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/tech/news/apple-is-going-to-announce-new-ipad-pro-models-airtags-next-month-says-jon-prosser-71613193586128.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/aipad-pro-tags-slight-tweak-feature_1613193691437_1613193696831.jpg" src="/img/zero.gif" alt="Prosser tweeted that the AirTags are “still on for March” and mentioned that he hasn’t heard of any “further delays” this time." class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/tech/news/apple-is-going-to-announce-new-ipad-pro-models-airtags-next-month-says-jon-prosser-71613193586128.html">Apple is going to announce new iPad Pro models, AirTags next month, says Jon Prosser</a>
+</h3>
+</div>
+</article>
+</li>
+</ul>
+</div>
+<div id="div-gpt-ad-1582279372469-0"></div>
+<div class="dfp-rightAd3 dfp-rightAd3-0RwQekBKDU2DA0i6uZfoLK mobPadTop40 padBot40 adsMCenter" id="dfp-rightAd3-0RwQekBKDU2DA0i6uZfoLK">
+</div>
+<div class="dfp-rightAd2 dfp-rightAd2-0RwQekBKDU2DA0i6uZfoLK mobPadTop40 padBot40 adsMCenter" id="dfp-rightAd2-0RwQekBKDU2DA0i6uZfoLK">
+</div>
+<!-- Widget Newsletter -->
+<!-- /1055314/HT_Tech_Desk_Story_BS_Multisize -->
+<div data-adcode="/3106570/HT_Tech_Desk_Story_BS_Multisize" data-adsize="[[300, 100], 'fluid']" style="margin-bottom: 0px;" class="adsMCenter mobileNone ht-dfp-ad-large">
+</div>
+<!-- /1055314/HT_Tech_WAP_Story_BS_Multisize -->
+<div data-adcode="/3106570/HT_Tech_WAP_Story_BS_Multisize" data-adsize="[[320, 50], [320, 100], [280, 100] , 'fluid']" style="margin-bottom: 0px;" class="adsMCenter ht-dfp-ad-small">
+</div>
+<!-- end widget newsletter -->
+<!-- Widget Banner -->
+<!-- /1055314/HT_TECH_Desk_Story_Middle_300x250_Multisize -->
+<div data-adcode="/1055314/HT_TECH_Desk_Story_Middle_300x250_Multisize" data-adsize="[[300, 250], [300, 600]]" style="margin-bottom: 0px;" class="adsMCenter ht-dfp-ad-large ht-dfp-ad-small">
+</div>
+<!-- end widget banner -->
+<div class="widget widget-popular-posts">
+<h4 class="widget-title">Don't Miss</h4>
+<ul class="widget-popular-posts__list">
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/tech/news/twitter-ceo-dorsey-teams-up-with-rapper-jay-z-to-back-bitcoin-71613184274799.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/Untitled_design_1613184570477_1613184578645.png" src="/img/zero.gif" alt="Twitter CEO Jack Dorsey and rap mogul Jay-Z.&nbsp;" class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/tech/news/twitter-ceo-dorsey-teams-up-with-rapper-jay-z-to-back-bitcoin-71613184274799.html">Twitter CEO Dorsey teams up with rapper Jay-Z to back bitcoin</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/wearables/news/trying-to-take-on-apple-facebook-is-reportedly-building-smartwatch-with-health-features-71613181865376.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/heart-rate-1842062_1920_1613182233338_1613182238053.jpg" src="/img/zero.gif" alt="Facebook's smartwatch will work via a cellular connection, letting users send messages through its services and also connect to the services or hardware of health and fitness companies, such as Peloton Interactive etc.&nbsp;" class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/wearables/news/trying-to-take-on-apple-facebook-is-reportedly-building-smartwatch-with-health-features-71613181865376.html">Trying to take on Apple? Facebook is reportedly building smartwatch with health features</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/tech/news/google-microsoft-qualcomm-protest-nvidia-s-acquisition-of-arm-ltd-71613181792865.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/0a6aa4f8d648463b9be9ad34f50fe8f9-0a6aa4f8d648463b9be9ad34f50fe8f9-0_1613181883719_1613181906863.jpg" src="/img/zero.gif" alt="Nvidia purchased Arm Holdings for $40 billion." class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/tech/news/google-microsoft-qualcomm-protest-nvidia-s-acquisition-of-arm-ltd-71613181792865.html">Google, Microsoft, Qualcomm protest Nvidia’s acquisition of Arm Ltd.</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/tech/news/netflix-ceo-lauds-reliance-jio-s-efforts-for-sharp-fall-in-data-prices-in-india-71613146333011.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/12/90x90/2021-01-01T133359Z_1_LYNXMPEH0016O_RTROPTP_3_RELIANCE-AGM_1613146530313_1613146550405.JPG" src="/img/zero.gif" alt="On the consolidation of OTT space, he told Fortune India. "If you look at many markets on the Internet, it's pretty fragmented with lots of different players. Think how difficult it is to create a television station in any country. It's much easier to create a video website. So, I think there'll be a lot of choices," he said." class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/tech/news/netflix-ceo-lauds-reliance-jio-s-efforts-for-sharp-fall-in-data-prices-in-india-71613146333011.html">Netflix CEO lauds Reliance Jio's efforts for sharp fall in data prices in India</a>
+</h3>
+</div>
+</article>
+</li>
+</ul>
+</div>
+<!-- Widget socials -->
+<div class="widget widget-socials">
+<h4 class="widget-title">Keep up with Tech</h4>
+<ul class="socials">
+<li>
+<a class="social-facebook" href="https://www.facebook.com/hindustantimestech" title="facebook" target="_blank">
+<i class="ui-facebook"></i>
+<span class="socials__text">Facebook</span>
+</a>
+</li>
+<li>
+<a class="social-twitter" href="https://twitter.com/HTTech" title="twitter" target="_blank">
+<i class="ui-twitter"></i>
+<span class="socials__text">Twitter</span>
+</a>
+</li>
+<!-- <li>
+<a class="social-google-plus" href="#" title="google" target="_blank">
+<i class="ui-google"></i>
+<span class="socials__text">Google+</span>
+</a>
+</li>
+<li>
+<a class="social-instagram" href="https://www.instagram.com/hindustantimestech/" title="instagram" target="_blank">
+<i class="ui-instagram"></i>
+<span class="socials__text">Instagram</span>
+</a>
+</li>
+-->
+</ul>
+</div> <!-- end widget socials -->
+<div class="widget widget-popular-posts" >
+<h4 class="widget-title">Trending</h4>
+<ul class="widget-popular-posts__list">
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/tech/news/google-to-soon-let-iphone-users-lock-incognito-tabs-with-face-or-touch-id-71613191379615.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/solen-feyissa-UWVJaDvXW_c-unsplash_(1)_1613191509046_1613191523208.jpg" src="/img/zero.gif" alt="Google Chrome beta for iOS" class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/tech/news/google-to-soon-let-iphone-users-lock-incognito-tabs-with-face-or-touch-id-71613191379615.html">Google to soon let iPhone users lock incognito tabs with Face or Touch ID</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/mobile/news/apple-days-on-flipkart-iphone-12-mini-iphone-11-available-with-discounts-71613187048176.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/daniel-romero-KeOUN9KaQAI-unsplash_1613187272598_1613187280640.jpg" src="/img/zero.gif" alt="Apple Days sale on Flipkart" class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/mobile/news/apple-days-on-flipkart-iphone-12-mini-iphone-11-available-with-discounts-71613187048176.html">Apple Days on Flipkart: iPhone 12 mini, iPhone 11 available with discounts</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/gaming/news/realme-set-to-launch-gaming-accessories-along-with-the-upcoming-narzo-30-series-71613186278202.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/EuA0Q0pVIA4i0qV_1613186329125_1613186345831.jpg" src="/img/zero.gif" alt="A recent leak has given us a look at a Narzo-themed gaming mouse, a mouse pad with the Narzo branding on it and another device that could in all probabilities be an air controller of some sort." class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/gaming/news/realme-set-to-launch-gaming-accessories-along-with-the-upcoming-narzo-30-series-71613186278202.html">Realme set to launch gaming accessories along with the upcoming Narzo 30 series</a>
+</h3>
+</div>
+</article>
+</li>
+<li>
+<article class="clearfix">
+<div class="widget-popular-posts__img-holder">
+<div class="thumb-container">
+<a href="/mobile/news/record-100-mn-smartphone-shipped-in-h2-2020-in-india-cmr-71613182098488.html">
+<img data-src="https://images.hindustantimes.com/tech/img/2021/02/13/90x90/image_-_2021-01-21T162117.011_1611226275943_1611226283624_1613182336124.jpg" src="/img/zero.gif" alt="Samsung was the leader in the overall mobile market with a 19 per cent share in 2020." class="lazyload">
+</a>
+</div>
+</div>
+<div class="widget-popular-posts__entry">
+<h3 class="widget-popular-posts__entry-title">
+<a href="/mobile/news/record-100-mn-smartphone-shipped-in-h2-2020-in-india-cmr-71613182098488.html">Record 100 mn smartphone shipped in H2 2020 in India: CMR</a>
+</h3>
+</div>
+</article>
+</li>
+</ul>
+</div>
+<!-- end widget popular posts -->
+<div class="mobPadTop40 padBot40 adsMCenter ht-dfp-ad-small" data-adcode="/3106570/HT_Tech_WAP_Story_BS_Multisize" data-adsize="['fluid', [320, 50], [320, 100], [280, 100]]">
+</div>
+<div class="mobPadTop40 padBot40 adsMCenter ht-dfp-ad-large" data-adcode="/3106570/HT_Tech_Desk_Story_BS_Multisize" data-adsize="[[300, 100], 'fluid']">
+</div>
+<!-- Widget Newsletter -->
+<!-- end widget newsletter -->
+<!-- Widget socials -->
+<!-- end widget socials -->
+<!-- Widget Banner -->
+<div class="mobPadTop40 padBot40 adsMCenter ht-dfp-ad-large" data-adcode="/1055314/HT_TECH_Desk_ES_Story_Middle_300x250_Multisize" data-adsize="[300, 250]">
+</div>
+<!-- end widget banner -->
+<!-- Widget Facebook -->
+<!-- end widget facebook -->
+<!-- Widget Latest Reviews -->
+<!-- end widget latest reviews -->
+</aside>
+<!-- end sidebar -->
+</div>
+<!-- end row -->
+<!-- Ad Banner 728 -->
+<div class="centerAd768 mobileNone">
+<div class="text-center ht-dfp-ad-large" data-adcode="/1055314/HT_TECH_Desk_ES_InStory_Footer_728x90_Multisize" data-adsize="[[950, 90], [960, 90], [970, 66], [728, 90], [980, 90], [970, 90], [750, 100], [930, 180], [750, 200], [970, 250], [580, 400], [980, 120], [1290, 250]]"></div>
+</div>
+</div>
+</div>
+<script>var listUrl = [];
+var showInfinite = true;
+var gatag = [];
+var urlCount = 0;
+var storyUuid = "0RwQekBKDU2DA0i6uZfoLK";
+function ScrollMe(c) {
+var d = c.replace("story_", "").trim();
+d = d + "_story";
+var a = c.trim();
+$("#ulInfinite").each(function() {
+var e = "";
+$(this).find("li").each(function(g, h) {
+var f = $(h).attr("id");
+if (f.trim() == a.trim()) {
+$(h).addClass("active")
+} else {
+$(h).removeClass("active")
+}
+})
+});
+var b = document.getElementById(d);
+b.scrollIntoView();
+b.scrollIntoView({
+behavior: "auto",
+block: "start",
+inline: "nearest"
+});
+$("html, body").animate({
+scrollTop: $("#" + a).offset().top - 800
+}, 800, "swing")
+}
+//getLatestNews("");
+$(document).ready(function() {
+$(".respVideo").find('.affiliation').each(function() {
+var section = "tech";
+function getCustomAds() {
+$("[id^=amazon_]").each(function() {
+var divID = $(this).attr('id');
+var productID = $(this).text();
+if (productID.includes(',')) {
+getProductByID(divID, productID, true);
+} else {
+getProductByID(divID, productID, false);
+}
+});
+}
+function getProductByID(id, productID, isDouble) {
+var customHTMl = "";
+$.ajax({
+url: "https://www.hindustantimes.com/fetch-products/?item-ids=" + productID + "&provider=aws-ads-provider&properties=HT," + section,
+dataType: 'json',
+success: function(response) {
+if (isDouble) {
+customHTMl += "<div class='cmpgn-cntnr clearfix'>";
+}
+$.each(response.items, function(index, item) {
+if (isDouble) {
+customHTMl += "<div class='wd-50'>";
+customHTMl += "<div class='box-shdw cmpgn-col'>";
+} else {
+customHTMl += "<div class='cmpgn-cntnr'>";
+customHTMl += "<div class='wd-100 box-shdw cmpgn-col'>";
+}
+customHTMl += "<div class='cmpng-img cmpngflt'><img data-src='" + item.imageUrls[1] + "' src='/img/zero.gif' class='lazyload'>";
+customHTMl += "</div>";
+customHTMl += "<div class='cmpgn-prdctdetail'>";
+customHTMl += "<p>" + item.title + "</p>";
+if (isDouble) {
+customHTMl += "<span class='totl-price'>&#8377;" + item.buyingPrice;
+if (item.originalPrice != null) {
+customHTMl += "<del>&#8377;" + item.originalPrice + "</del>";
+}
+customHTMl += "</span>";
+} else {
+customHTMl += "<div class='xs-btn'>";
+if (item.buyingPrice != null) {
+customHTMl += "<small class='prictag'>&#8377;" + item.buyingPrice + "</small>";
+}
+customHTMl += "<span class='disnt-price'>";
+if (item.originalPrice != null) {
+customHTMl += "<del>&#8377;" + item.originalPrice + "</del>";
+}
+if (item.savingPercentage > 0) {
+customHTMl += "<small>(" + item.savingPercentage + "% 0ff)</small>";
+}
+customHTMl += "</span></div>";
+}
+customHTMl += "<a href='" + item.detailPageURL + "' class='cmpngbtn' target='_blank'>Buy on Amazon</a>";
+customHTMl += "</div>";
+if (isDouble) {
+customHTMl += "</div>";
+customHTMl += "</div>";
+} else {
+customHTMl += "</div>";
+customHTMl += "</div>";
+}
+});
+if (isDouble) {
+customHTMl += "</div>";
+}
+$("#" + id).show();
+$("#" + id).html(customHTMl);
+}
+});
+}
+getCustomAds();
+});
+});
+function InfiniteScroll() {
+var a = listUrl[urlCount];
+var d = $(".articles").infiniteScroll({
+path: function() {
+return a
+},
+append: ".article",
+status: ".scroller-status",
+hideNav: ".pagination",
+loadOnScroll: false,
+scrollThreshold: false
+});
+d.infiniteScroll("loadNextPage");
+d.on("history.infiniteScroll", function(g, i, h) {
+var f = "article_" + getStoryIdByUrl(h);
+document.title = i;
+var e = h.replace(".html", "").split("-");
+e = e.reverse();
+var k = e[0].trim();
+$("#ulInfinite li").removeClass("active");
+$("#story_" + k).addClass("active");
+ga('send', {
+'hitType': 'pageview',
+'location': window.location.hostname.trim(),
+'page': window.location.pathname.trim(),
+'title': i.trim()
+});
+window.snowplow("trackPageView", i.trim());
+if (typeof COMSCORE != 'undefined' && typeof COMSCORE.beacon !== 'undefined'){
+COMSCORE.beacon({c1 : "2",c2 : "6035286"})
+}
+});
+d.on("load.infiniteScroll", function(f, e, g) {
+urlCount++
+});
+var b = 1;
+var c;
+d.on("append.infiniteScroll", function(F, g, A, y) {
+$(document).ready(function() {
+$(".respVideo").find('.affiliation').each(function() {
+var section = "tech";
+function getCustomAds() {
+$("[id^=amazon_]").each(function() {
+var divID = $(this).attr('id');
+var productID = $(this).text();
+if (productID.includes(',')) {
+getProductByID(divID, productID, true);
+} else {
+getProductByID(divID, productID, false);
+}
+});
+}
+function getProductByID(id, productID, isDouble) {
+var customHTMl = "";
+$.ajax({
+url: "https://www.hindustantimes.com/fetch-products/?item-ids=" + productID + "&provider=aws-ads-provider&properties=HT," + section,
+dataType: 'json',
+success: function(response) {
+if (isDouble) {
+customHTMl += "<div class='cmpgn-cntnr clearfix'>";
+}
+$.each(response.items, function(index, item) {
+if (isDouble) {
+customHTMl += "<div class='wd-50'>";
+customHTMl += "<div class='box-shdw cmpgn-col'>";
+} else {
+customHTMl += "<div class='cmpgn-cntnr'>";
+customHTMl += "<div class='wd-100 box-shdw cmpgn-col'>";
+}
+customHTMl += "<div class='cmpng-img cmpngflt'><img data-src='" + item.imageUrls[1] + "' src='/img/zero.gif' class='lazyload'>";
+customHTMl += "</div>";
+customHTMl += "<div class='cmpgn-prdctdetail'>";
+customHTMl += "<p>" + item.title + "</p>";
+if (isDouble) {
+customHTMl += "<span class='totl-price'>&#8377;" + item.buyingPrice;
+if (item.originalPrice != null) {
+customHTMl += "<del>&#8377;" + item.originalPrice + "</del>";
+}
+customHTMl += "</span>";
+} else {
+customHTMl += "<div class='xs-btn'>";
+if (item.buyingPrice != null) {
+customHTMl += "<small class='prictag'>&#8377;" + item.buyingPrice + "</small>";
+}
+customHTMl += "<span class='disnt-price'>";
+if (item.originalPrice != null) {
+customHTMl += "<del>&#8377;" + item.originalPrice + "</del>";
+}
+if (item.savingPercentage > 0) {
+customHTMl += "<small>(" + item.savingPercentage + "% 0ff)</small>";
+}
+customHTMl += "</span></div>";
+}
+customHTMl += "<a href='" + item.detailPageURL + "' class='cmpngbtn' target='_blank'>Buy on Amazon</a>";
+customHTMl += "</div>";
+if (isDouble) {
+customHTMl += "</div>";
+customHTMl += "</div>";
+} else {
+customHTMl += "</div>";
+customHTMl += "</div>";
+}
+});
+if (isDouble) {
+customHTMl += "</div>";
+}
+$("#" + id).show();
+$("#" + id).html(customHTMl);
+}
+});
+}
+getCustomAds();
+});
+});
+// var Suid = getStoryIdByUrl(A);
+var storyCountForScroll = 3; // next 3 stories to be appended
+if(isDeviceEnabled('small')){
+storyCountForScroll = 1 // next 1 stories to be appended
+}
+c = $(y).find(".get-uuid").val();
+//GenerateAdcode(y,Suid);
+//getLatestNews(y);
+$(y).find("img.lazy").each(function(s, M) {
+$(M).lazyload({
+effect: "fadeIn",
+effectTime: 20,
+threshold: 200,
+failurelimit: 0
+})
+})
+getNativeStoryAds($(y).find(".htStoryDetail"), function() {
+if (isDeviceEnabled('large')) {
+storyAdDisplay($(y).find(".ht-dfp-ad-large"));
+}
+if (isDeviceEnabled('small')) {
+storyAdDisplay($(y).find(".ht-dfp-ad-small"));
+}
+});
+b++;
+if (urlCount < storyCountForScroll) {
+a = listUrl[urlCount];
+d.infiniteScroll("loadNextPage")
+}
+})
+}
+var reqOpen = true;
+$(document).bind("scroll", function() {
+var a = {
+top: $(document).scrollTop(),
+left: $(document).scrollLeft()
+};
+a.bottom = a.top + $(document).height();
+lastScrollTop = a.top;
+var c = a.bottom - $(document).height();
+if (a.top > 200) {
+$(".infiniteStoryScroll").addClass('show');
+$("#stickydivAD").addClass('showAds');
+$("#back-to-top").addClass('showTopBottom');
+$(".respVideo").find('twitter-widget.twitter-tweet').each(function() {
+$(this).closest(".respVideo").addClass("twitterClass");
+});
+$(".respVideo").find('.affiliation').each(function() {
+$(this).closest(".respVideo").addClass("affiliationClass");
+});
+$(".respVideo").find('script').each(function() {
+$(this).closest(".respVideo").addClass("scriptClass");
+});
+$(".respVideo").find('.textarea').each(function() {
+$(this).closest(".respVideo").addClass("respShow");
+});
+$(".respVideo").find('.instagram-media').each(function() {
+$(this).closest(".respVideo").removeClass("scriptClass");
+$(this).closest(".respVideo").removeClass("respShow");
+$(this).closest(".respVideo").addClass("instaClass");
+$(this).closest(".instaClass").removeClass("respVideo");
+});
+if (reqOpen == true) {
+$("#ulInfinite li:first").addClass("active");
+$("#ulInfinite li .stroy-link").each(function(e, d) {
+if (isDeviceEnabled('small')) {
+if (e > 0 && e < 2) {
+listUrl.push($(d).html())
+}
+} else {
+if (e > 0) {
+listUrl.push($(d).html())
+}
+}
+});
+InfiniteScroll();
+reqOpen = false
+}
+} else {
+if (c < 200) {
+$(".infiniteStoryScroll").removeClass('show');
+$("#stickydivAD").removeClass('showAds');
+$("#back-to-top").removeClass('showTopBottom');
+}
+}
+});
+function getStoryIdByUrl(c) {
+var a = "";
+if (c !== "") {
+var bd = c.substring(0, c.lastIndexOf("-"));
+var b = c.match(bd + "-(.*).html");
+a = b[1].trim()
+}
+return a
+};
+function getLatestNews(j) {
+var str = "";
+var k, e;
+var forYouApiResponse = "";
+if (j !== "") {
+e = $(j).find("#latest-stories")
+} else {
+e = "#latest-stories"
+}
+if (forYouApiResponse == "") {
+$.ajax({
+url: "https://tech.hindustantimes.com/api/cms/page?url=/latest-news&page=0&size=6",
+dataType: 'application/json',
+success: function(data) {
+GenerateData(data, e);
+},
+error: function(data) {
+GenerateData(data, e);
+}
+});
+}
+}
+function GenerateData(data, e) {
+var str = '';
+str += '<div class="widget widget-popular-posts" >';
+str += '<h4 class="widget-title"><a href="/latest-news">Latest News</a></h4>';
+str += '<ul class="widget-popular-posts__list">';
+data = JSON.parse(data.responseText).content.content;
+localStorage.setItem('obj' + e, data);
+$.each(
+data,
+function(i, item) {
+if (i < 4) {
+str += '<li>';
+str += '<article class="clearfix">';
+str += '<div class="widget-popular-posts__img-holder">';
+str += '<div class="thumb-container">';
+str += '<a href="' + item.metadata.url + '">';
+if (item.leadMedia.image && item.leadMedia.elements && item.leadMedia.image.images["90x90"]) {
+str += '<img data-src="' + item.leadMedia.image.images["90x90"] + '" src="/img/zero.gif" class="lazyload">';
+} else {
+str += '<img data-src="/img/default/default_90_90_v1.png" src="/img/zero.gif" alt="Hindustan Time Tech" class="lazyload">';
+}
+str += '</a>';
+str += '</div>';
+str += '</div>';
+str += '<div class="widget-popular-posts__entry">';
+str += '<h3 class="widget-popular-posts__entry-title">';
+str += '<a href="' + item.metadata.url + '">' + item.mobileHeadline + '</a>';
+str += '</h3>';
+str += '</div>';
+str += '</article>';
+str += '</li>';
+}
+});
+str += '</ul>';
+str += '</div>';
+forYouApiResponse = str;
+$(e).html(str)
+}
+</script>
+<!-- end content -->
+</main> <!-- end main container -->
+<!-- Footer -->
+<div class="footer">
+<div class="trending-foot">
+<div class="container">
+<div class="row custom-row">
+<div class="col-lg-4 col-md-4 col-sm-12 border-right">
+<div class="colapse-text">
+<h3 class="plus">Categories</h3>
+<p>
+<a href="https://tech.hindustantimes.com/latest-news">Latest News</a> |
+<a href="https://tech.hindustantimes.com/tech/news">Tech News</a> |
+<a href="https://tech.hindustantimes.com/home-appliances">Home Appliances</a> |
+<a href="https://tech.hindustantimes.com/tv">TV</a> |
+<a href="https://tech.hindustantimes.com/tv/news">TV News</a> |
+<a href="https://tech.hindustantimes.com/tv/reviews">TV Reviews</a> |
+<a href="https://tech.hindustantimes.com/how-to">How To</a> |
+<a href="https://tech.hindustantimes.com/videos">Videos</a> |
+<a href="https://tech.hindustantimes.com/photos">Photos</a> |
+<a href="https://tech.hindustantimes.com/gaming">Games</a> |
+<a href="https://tech.hindustantimes.com/wearables">Wearables</a> |
+<a href="https://tech.hindustantimes.com/wearables/news">Wearable News</a> |
+<a href="https://tech.hindustantimes.com/wearables/reviews">Wearable Reviews</a> |
+<a href="https://tech.hindustantimes.com/laptops-pc">Laptops</a> |
+<a href="https://tech.hindustantimes.com/laptops-pc/news">Laptop News</a> |
+<a href="https://tech.hindustantimes.com/laptops-pc/reviews">Laptops Review</a> |
+<a href="https://tech.hindustantimes.com/mobile">Mobile</a> |
+<a href="https://tech.hindustantimes.com/mobile/news">Mobile News</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews">Mobile reviews</a> |
+</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 border-right">
+<div class="colapse-text">
+<h3 class="plus">Trending Stories</h3>
+<p>
+<a href="https://tech.hindustantimes.com/tech/news/google-fails-to-bring-privacy-labels-to-gmail-maps-and-other-ios-apps-even-after-promising-an-update-71613023264230.html">Gmail app</a> |
+<a href="https://tech.hindustantimes.com/tech/news/twitters-indian-rival-koo-exposes-user-email-phone-number-gender-marital-status-and-more-71613026881264.html">Twitter</a> |
+<a href="https://tech.hindustantimes.com/gaming/news/pokemon-company-is-making-more-pokemon-cards-since-they-are-selling-so-well-71613022621721.html">Pokemon trading cards</a> |
+<a href="https://tech.hindustantimes.com/tech/news/google-search-on-desktop-gets-dark-mode-71613020770568.html">Google Search</a> |
+<a href="https://tech.hindustantimes.com/tech/news/nadella-bats-for-clearer-laws-rules-to-govern-social-media-71613025732818.html">Satya Nadella</a> |
+<a href="https://tech.hindustantimes.com/wearables/news/apple-ar-headset-s-micro-oled-screen-is-under-testing-phase-made-by-tsmc-71612936189003.html">Apple AR headset</a> |
+</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 border-right">
+<div class="colapse-text">
+<h3 class="plus"> Mobile Phone Reviews</h3>
+<p>
+<a href="https://tech.hindustantimes.com/mobile/reviews/iphone-se-review-it-s-a-solid-win-71591580506142.html">iPhone SE Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/oppo-reno-4-pro-review-great-display-and-super-fast-charging-71598197405749.html">Oppo Reno 4 Pro Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/samsung-galaxy-m31s-review-a-heavy-powerhouse-71599378845078.html">Samsung Galaxy M31s Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/nokia-5310-xpressmusic-review-71594452021245.html">Nokia 5310 Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/google-pixel-4a-review-our-favourite-android-phone-of-2020-71608626089706.html">Google Pixel 4a Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/redmi-note-9-review-covers-the-basics-but-does-that-well-71599029809970.html">Redmi Note 9 Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/iphone-12-mini-review-a-fierce-little-device-71608733772524.html">Apple iPhone 12 mini Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/samsung-galaxy-s20-ultra-review-to-be-or-note-to-be-71596268549844.html">Samsung Galaxy S20 Ultra Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/apple-iphone-12-pro-review-if-you-can-afford-it-go-for-it-71607430872685.html">Apple iPhone 12 Pro Review</a> |
+<a href="https://tech.hindustantimes.com/mobile/reviews/poco-m2-pro-review-a-redmi-note-9-pro-lookalike-with-subtle-changes-upgrades-71595134074452.html">Poco M2 Pro Review</a> |
+</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 border-right">
+<div class="colapse-text">
+<h3 class="plus">Trending Topics</h3>
+<p>
+<a href="https://tech.hindustantimes.com/tags/youtube">Youtube</a> |
+<a href="https://tech.hindustantimes.com/tags/amazon">Amazon</a> |
+<a href="https://tech.hindustantimes.com/tags/ps5">PS5</a> |
+<a href="https://tech.hindustantimes.com/tags/iphone">Iphone</a> |
+<a href="https://tech.hindustantimes.com/tags/samsung">Samsung</a> |
+<a href="https://tech.hindustantimes.com/tags/whatsapp">Whatsapp</a> |
+<a href="https://tech.hindustantimes.com/tags/xiaomi">Xiaomi</a> |
+<a href="https://tech.hindustantimes.com/tags/apple">Apple</a> |
+<a href="https://tech.hindustantimes.com/tags/redmi">Redmi</a> |
+</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 border-right">
+<div class="colapse-text">
+<h3 class="plus">TRENDING HOW TO</h3>
+<p>
+<a href="https://tech.hindustantimes.com/how-to/how-to-use-whatsapp-on-two-numbers-on-your-phone-at-the-same-time-71594540691714.html">Dual WhatsApp in the Same Mobile</a> |
+<a href="https://tech.hindustantimes.com/how-to/how-to-shop-using-whatsapp-carts-71607439680290.html">How to shop using WhatsApp Carts</a> |
+<a href="https://tech.hindustantimes.com/tech/news/how-to-record-a-meeting-in-google-meet-story-RDUP3VUb0CKkInQBuooXYK.html">How to record a meeting in Google Meet</a> |
+<a href="https://tech.hindustantimes.com/tech/news/covid-19-tracker-how-to-check-which-areas-in-your-city-are-hotspots-story-X3LKToa5HmKxnJfHA00BCN.html">Covid-19 Hotspot Dashboard</a> |
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="social-foot">
+<div class="container">
+<div class="row last-element">
+<div class="col-lg-5 col-md-6 col-sm-12 order-sm-1">
+<div class="logo-social">
+<ul>
+<li class="logo-li"><a><img src="/img/httech_logo_v1.svg" class="" alt=""></a></li>
+<li class="social-li"><a href="https://www.facebook.com/hindustantimestech" class="social-facebook" target="_blank"><i class="ui-facebook"></i></a></li>
+<li class="social-li"><a href="https://twitter.com/HTTech" class="social-twitter" target="_blank"><i class="ui-twitter"></i></a> </li>
+<li class="social-li"><a href="https://www.instagram.com/hindustantimestech/" class="social-instagram" target="_blank"><i class="ui-instagram"></i></a> </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-7 col-md-6 col-sm-12 order-md-1">
+<div class="footer-links">
+<ul>
+<li><a href="/about-us">About Us</a></li>
+<li><a href="/contact-us">Contact Us</a></li>
+<li><a href="/terms-of-use">Terms of Use</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/rss">RSS</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<div class="copyright-text">&copy; 2020 Tech HindustanTimes</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var preViewportDistance = 1.5 * $(window).height();
+/** Executes a parallel auction with prebid **/
+function executeParallelAuctionAlongsidePrebid(e, i, t) {
+var FAILSAFE_TIMEOUT = 2000;
+var requestManager = {
+adserverRequestSent: false,
+aps: false,
+prebid: false
+};
+var slot,requestSlot;
+var o = e.attr("id");
+googletag.cmd.push(function () {
+slot = googletag.defineSlot(i, t, o).addService(googletag.pubads()).setCollapseEmptyDiv(true, true);
+});
+googletag.cmd.push(function () {
+requestSlot = googletag.pubads().getSlots().filter(item=>item.getSlotElementId() == o);
+});
+// when both APS and Prebid have returned, initiate ad request
+function biddersBack() {
+if (requestManager.aps && requestManager.prebid) {
+sendAdserverRequest();
+}
+return;
+}
+// sends adserver request
+function sendAdserverRequest() {
+if (requestManager.adserverRequestSent === true) {
+return;
+}
+requestManager.adserverRequestSent = true;
+googletag.cmd.push(function() {
+//googletag.display(o);
+googletag.pubads().refresh([slot]);
+});
+}
+// sends bid request to APS and Prebid
+function requestHeaderBids() {
+//Ignoring Brand Studio ads for header bidding
+if(i.includes("_BS_")){
+return sendAdserverRequest();
+}
+// APS request
+apstag.fetchBids({
+slots: [{
+slotID: o,
+slotName: i,
+sizes: t
+}]
+},function(bids) {
+googletag.cmd.push(function() {
+apstag.setDisplayBids();
+requestManager.aps = true; // signals that APS request has completed
+biddersBack(); // checks whether both APS and Prebid have returned
+});
+}
+);
+// put prebid request here
+PWT.requestBids(PWT.generateConfForGPT(requestSlot),function(adUnitArray){
+PWT.addKeyValuePairsToGPTSlots(adUnitArray);
+requestManager.prebid = true; // signals that Prebid request has completed
+biddersBack(); // checks whether both APS and Prebid have returned
+});
+}
+// initiate bid request
+requestHeaderBids();
+// set failsafe timeout
+window.setTimeout(function() {
+sendAdserverRequest();
+}, FAILSAFE_TIMEOUT);
+};
+$.fn.isInViewport = function () {
+if ($(this).length > 0) {
+var e = $(this).offset().top - preViewportDistance,
+i = e + $(this).outerHeight() + preViewportDistance,
+t = $(window).scrollTop(),
+o = t + $(window).height();
+return i > t && e < o;
+}
+return !1;
+};
+var nextSlotId = 1;
+function generateNextSlotName() {
+var id = nextSlotId++;
+return 'adslot' + id;
+}
+function storyAdDisplay(element){
+element.each(function(){
+var divid = generateNextSlotName();
+$(this).attr('id', divid);
+var divadcode = $(this).attr('data-adcode');
+var divadsize = $(this).attr('data-adsize');
+if (typeof divadcode !== "undefined" && typeof divadsize !== "undefined"){
+divadsize = divadsize.replace(/'/g,'"');
+var ad = $("#" + divid);
+var homeScrollHandler = function () {
+ad.isInViewport() && (executeParallelAuctionAlongsidePrebid(ad, divadcode, JSON.parse(divadsize)), $(window).off("scroll", homeScrollHandler));
+};
+$(window).on("scroll", homeScrollHandler);
+}
+});
+}
+var storyAds = [
+{
+adCode: "/1055314/HT_Tech_WAP_ES_In-Story_A_Multisize",
+adSize: "[[200, 200], [250, 250], [300, 250], [336, 280]]"
+},
+{
+adCode: "/1055314/HT_Tech_WAP_ES_In-Story_B_Multisize",
+adSize: "['fluid', [200, 200], [250, 250], [300, 250], [336, 280]]"
+},
+{
+adCode: "/1055314/HT_Tech_WAP_ES_In-Story_C_Multisize",
+adSize: "['fluid', [200, 200], [250, 250], [300, 250], [336, 280]]"
+},
+{
+adCode: "/1055314/HT_Tech_WAP_ES_In-Story_D_Multisize",
+adSize: "['fluid', [200, 200], [250, 250], [300, 250], [336, 280]]"
+},
+{
+adCode: "/1055314/HT_Tech_WAP_ES_In-Story_E_Multisize",
+adSize: "['fluid', [200, 200], [250, 250], [300, 250], [336, 280]]"
+},
+{
+adCode: "/1055314/HT_Tech_WAP_ES_In-Story_F_Multisize",
+adSize: "['fluid', [200, 200], [250, 250], [300, 250], [336, 280]]"
+},
+{
+adCode: "/1055314/HT_Tech_WAP_ES_In-Story_G_Multisize",
+adSize: "['fluid', [200, 200], [250, 250], [300, 250], [336, 280]]"
+}
+];
+var storyAdsDesk = [
+{
+adCode: "/1055314/HT_TECH_Desk_In-Story_A_Multisize",
+adSize: "[[1, 1], [728, 90]]"
+},
+{
+adCode: "/1055314/HT_TECH_Desk_In-Story_B_Multisize",
+adSize: "[[1, 1], [728, 90]]"
+},
+{
+adCode: "/1055314/HT_TECH_Desk_In-Story_C_Multisize",
+adSize: "[[1, 1], [728, 90]]"
+},
+{
+adCode: "/1055314/HT_TECH_Desk_In-Story_D_Multisize",
+adSize: "[[1, 1], [728, 90]]"
+},
+{
+adCode: "/1055314/HT_TECH_Desk_In-Story_E_Multisize",
+adSize: "[[1, 1], [728, 90]]"
+},
+{
+adCode: "/1055314/HT_TECH_Desk_In-Story_F_Multisize",
+adSize: "[[1, 1], [728, 90]]"
+},
+{
+adCode: "/1055314/HT_TECH_Desk_In-Story_G_Multisize",
+adSize: "[[1, 1], [728, 90]]"
+},
+{
+adCode: "/1055314/HT_TECH_Desk_In-Story_H_Multisize",
+adSize: "[[1, 1], [728, 90]]"
+}
+];
+function getNativeStoryAds(divMainArea, callback) {
+try {
+var thisStoryadCounter = 0;
+var wordCount = 0;
+var storyElemC = divMainArea.children("p,div.respVideo,figure");
+var firstAdjuscentAdCounter = 0;
+storyElemC.each(function (index, el) {
+if (el.tagName.toLowerCase() == "p" || el.tagName.toLowerCase() == "figure" || (el.tagName.toLowerCase() == "div" && el.classList.contains("respVideo"))) {
+if (!firstAdjuscentAdCounter) {
+wordCount += analyseObjectData(el);
+if (wordCount >= 30) {
+firstAdjuscentAdCounter++;
+wordCount = 0;
+}
+if (firstAdjuscentAdCounter) {
+var newElem = document.createElement("div");
+if(isDeviceEnabled('large')) {
+newElem.setAttribute("data-adcode", storyAdsDesk[thisStoryadCounter].adCode);
+newElem.setAttribute("data-adsize", storyAdsDesk[thisStoryadCounter].adSize);
+newElem.classList.add("textC", "mb20", "ht-dfp-ad-large");
+}
+if(isDeviceEnabled('small')) {
+newElem.setAttribute("data-adcode", storyAds[thisStoryadCounter].adCode);
+newElem.setAttribute("data-adsize", storyAds[thisStoryadCounter].adSize);
+newElem.classList.add("textC", "mb20", "ht-dfp-ad-small");
+}
+insertAfter(el, newElem);
+thisStoryadCounter++;
+}
+} else {
+wordCount += analyseObjectData(el);
+if (wordCount >= 120) {
+var newElem = document.createElement("div");
+if(isDeviceEnabled('large')) {
+newElem.setAttribute("data-adcode", storyAdsDesk[thisStoryadCounter].adCode);
+newElem.setAttribute("data-adsize", storyAdsDesk[thisStoryadCounter].adSize);
+newElem.classList.add("textC", "mb20", "ht-dfp-ad-large");
+}
+if(isDeviceEnabled('small')) {
+newElem.setAttribute("data-adcode", storyAds[thisStoryadCounter].adCode);
+newElem.setAttribute("data-adsize", storyAds[thisStoryadCounter].adSize);
+newElem.classList.add("textC", "mb20", "ht-dfp-ad-small");
+}
+insertAfter(el, newElem);
+wordCount = 0;
+thisStoryadCounter++;
+}
+}
+}
+});
+callback();
+} catch (e) {
+callback();
+}
+}
+function analyseObjectData(obj) {
+var embedWeight = 80;
+if (typeof obj === "object")
+if (obj.tagName.toLowerCase() == "p") {
+var contentWords = (obj.innerText.match(/ /g) || []).length + 1;
+return contentWords;
+} else if (obj.tagName.toLowerCase() == "div" && obj.className.includes("respVideo")) return embedWeight;
+else if (obj.tagName.toLowerCase() == "figure") return embedWeight;
+return 0;
+}
+function insertAfter(element, newElement) {
+element.parentNode.insertBefore(newElement, element.nextSibling);
+}
+var divMainArea = $(".htStoryDetail");
+getNativeStoryAds(divMainArea, function(){
+if(isDeviceEnabled('large')) {
+storyAdDisplay($(".ht-dfp-ad-large"));
+}
+if(isDeviceEnabled('small')) {
+storyAdDisplay($(".ht-dfp-ad-small"));
+}
+});
+</script> <div id="back-to-top">
+<a href="#top" aria-label="Go to top"><i class="ui-arrow-up"></i></a>
+</div>
+<div id="stickydivAD" class="fl100 htTech-ads" >
+<div data-adcode='/3106570/HT_TECH_WAP_In-Story_Sticky_Multisize' data-adsize="[[320, 50], [300, 50]]" class="desktopNone adsMCenterF ht-dfp-ad-small" style="text-align: center;margin:0px auto 0px;">
+</div>
+</div>
+<div class="infiniteStoryScroll" style="">
+<div class="storyScroll">
+<ul id="ulInfinite">
+<li id="story_0RwQekBKDU2DA0i6uZfoLK" class="" onclick="ScrollMe('story_0RwQekBKDU2DA0i6uZfoLK')">
+<div class="stroy-link" style="display:none">https://tech.hindustantimes.com/tech/news/google-chrome-dino-game-t-rex-gets-party-hats-cakes-and-more-story-0RwQekBKDU2DA0i6uZfoLK.html</div>
+<div class="floatimg">
+<img src="/img/zero.gif" data-src="https://images.hindustantimes.com/tech/rf/image_size_90x90/HT/p2/2018/09/08/Pictures/_78f845bc-b34e-11e8-bb15-a1f88311a832.jpg" alt="" class="entry__img lazyload">
+</div>
+<div class="description">Google Chrome dino game: T-Rex ...</div>
+</li>
+<li id="story_SmzijsqOeTZn024Dhri0gN" onclick="ScrollMe('story_SmzijsqOeTZn024Dhri0gN')" class="">
+<div class="stroy-link" style="display:none">https://tech.hindustantimes.com/tech/news/google-turns-20-how-powerful-is-the-search-engine-giant-story-SmzijsqOeTZn024Dhri0gN.html</div>
+<div class="floatimg">
+<img src="/img/zero.gif" data-src="https://images.hindustantimes.com/tech/rf/image_size_90x90/HT/p2/2018/09/08/Pictures/page-brin_24c1ab86-b340-11e8-bb15-a1f88311a832.jpg" alt="" class="entry__img lazyload">
+</div>
+<div class="description">Google turns 20: How powerful is ...</div>
+</li>
+<li id="story_2ERqdA71p4znJnrpW8IpiJ" onclick="ScrollMe('story_2ERqdA71p4znJnrpW8IpiJ')" class="">
+<div class="stroy-link" style="display:none">https://tech.hindustantimes.com/tech/news/fortnite-for-android-hits-15-million-downloads-just-3-weeks-after-release-story-2ERqdA71p4znJnrpW8IpiJ.html</div>
+<div class="floatimg">
+<img src="/img/zero.gif" data-src="https://images.hindustantimes.com/tech/rf/image_size_90x90/HT/p2/2018/09/08/Pictures/_5efdd822-b33d-11e8-bb15-a1f88311a832.jpg" alt="" class="entry__img lazyload">
+</div>
+<div class="description">Fortnite for Android hits 15 ...</div>
+</li>
+<li id="story_EJAAwo4yL0SF7cBbzQToQM" onclick="ScrollMe('story_EJAAwo4yL0SF7cBbzQToQM')" class="">
+<div class="stroy-link" style="display:none">https://tech.hindustantimes.com/tech/news/my-personal-challenge-for-2018-has-been-to-fix-the-most-important-issues-facing-facebook-zuckerberg-story-EJAAwo4yL0SF7cBbzQToQM.html</div>
+<div class="floatimg">
+<img src="/img/zero.gif" data-src="https://images.hindustantimes.com/tech/rf/image_size_90x90/HT/p2/2018/09/08/Pictures/mark-zuckerberg_b524f1ce-b33b-11e8-bb15-a1f88311a832.jpg" alt="" class="entry__img lazyload">
+</div>
+<div class="description">My personal challenge for 2018 has ...</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- end footer -->
+<!-- jQuery Scripts -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/easing.min.js"></script>
+<script src="/js/flickity.pkgd.min.js"></script>
+<script src="/js/modernizr.min.js"></script>
+<script src="/js/scripts.js?v=10.02.20.21"></script>
+<script defer src="/js/tech-script.js?v=10.02.20.21"></script>
+<script>
+$(document).ready(function(){
+if(isMobile){
+$(".colapse-text h3").on("click", function(){
+$(this).addClass("plus");
+$(this).toggleClass("close-btn");
+$(this).next().toggle();
+});
+}
+$(document).on("click", ".btn-more", function(e){
+var btnId = $(e.currentTarget).attr("id");
+var elemId = $(e.currentTarget).attr("data-article");
+var collapseFlag = 0;
+_viewMore(elemId, btnId, collapseFlag);
+if(storyType === "liveblog"){
+ga('send','event','liveblog_page', 'click','read_more');
+}else{
+ga('send','event','story_page', 'click','read_more');
+}
+})
+});
+function sendTopicGA(topicPath, topicName){
+ga('send', 'event', 'Topics', topicName, topicPath);
+}
+function sharePage(url) {
+newwindow = window.open(url, "name", "height=350,width=400,scrollbars=yes");
+if (window.focus) {
+newwindow.focus();
+}
+return false;
+}
+function _viewMore(articleId, btnId, flag){
+console.log(btnId);
+var elem = document.getElementById(articleId);
+var btnEl = document.getElementById("btn-container-"+btnId.split("-")[1]);
+if(flag === 0){
+elem.style.height = 'auto';
+btnEl.style.display = 'none';
+}else{
+elem.style.height = '240px';
+btnEl.style.display = 'flex';
+}
+}
+</script>
+</body>
+</html>
